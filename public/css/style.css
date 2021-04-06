@@ -3,16 +3,110 @@ body {
 }
 
 /* Exo margin */
+section{
+  background-color: #4da6ff;
+}
+h2{
+  background-color: yellow;
+  border: black 2px solid;
+  font-size: 300%;
+}
+/* trouver une solution */
+section:first-child>:nth-child(3){
+  margin 50px;
+}
+
+
+/* OU section:first-child(3) */
+section:nth-child(1)>ol:nth-child(4)+h2{
+  margin-left: 20%;
+}
+
+/* OU section:first-child>:last-child */
+section:nth-child(1)>h2:last-of-type{
+  color: aqua;
+  margin: auto;
+}
+
 /* fin exo margin */
 
+
+
+
 /* exo padding */
+section:nth-child(2)>h2:first-of-type{
+    padding: 50px;
+}
+section:nth-child(2)>h2:nth-of-type(2){
+  padding-left: 20%;
+}/*OU H2 :last-of-type*/
+
 /* fin exo padding */
 
+
+
+
+
 /* exo display */
+
+/* OU section:nth-child(3) */
+section:nth-child(3)>ol>li:first-child{
+  margin: 20px;
+  padding: 30px;
+}
+section:nth-child(3)>h2{
+  display: ;
+ /*tester les diff display*/
+}
+section:nth-child(3)>h2:last-of-type{
+  display: none;
+}
+
 /* fin exo display */
 
+
+
+/* début exo float */
+
+section:nth-child(4)>h2{
+  width: auto;
+  float: left;
+}
+
+section:nth-child(4){
+  overflow: auto;
+}
+/* fin exo float */
+
+
+
 /* exo position */
+section:nth-child(5)>h2:first-of-type{
+  position: fixed;
+  background-color: green;
+  margin: 0;
+  top: 50px;
+  left: 50%;
+}
+section:nth-child(5){
+  position: relative;
+}
+
 /* fin exo position */
 
+
+
 /* exo position (priorité) */
+section:nth-child(6)>h2:last-of-type{
+  background-color: blue;
+  margin-left: 100px;
+  z-index: -1;
+}
+section:nth-child(6)>h2:first-of-type{
+  z-index: 1;
+}
+section:nth-child(6)>h2{
+  position: absolute;
+}
+
 /* fin exo position (priorité) */
